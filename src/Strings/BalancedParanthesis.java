@@ -1,4 +1,4 @@
-package Stack;
+package Strings;
 
 import java.util.Stack;
 import java.util.Scanner;
@@ -6,24 +6,23 @@ import java.util.Scanner;
 public class BalancedParanthesis {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int testcase = sc.nextInt();
-        sc.nextLine(); // Consume the newline character after integer input
-
-        while(testcase > 0){
-            String paranthesis = sc.nextLine();
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        scanner.nextLine();
+        while (n > 0) {
+            String paranthesis = scanner.nextLine();
             if (isBalanced(paranthesis)) {
-                System.out.println("YES");
+                System.out.println("Balanced");
             } else {
-                System.out.println("NO");
+                System.out.println("Not Balanced");
             }
-            testcase--;
+            n--;
         }
+
     }
 
     public static boolean isBalanced(String paranthesis) {
         Stack<Character> stack = new Stack<>();
-
         for (char ch : paranthesis.toCharArray()) {
             if (ch == '(' || ch == '{' || ch == '[') {
                 stack.push(ch);
@@ -31,15 +30,14 @@ public class BalancedParanthesis {
                 if (stack.isEmpty()) {
                     return false;
                 }
-                char top = stack.pop();
-                if ((ch == ')' && top != '(') ||
-                        (ch == '}' && top != '{') ||
-                        (ch == ']' && top != '[')) {
+                char last = stack.pop();
+                if ((ch == ')' && last != '(') ||
+                        (ch == '}' && last != '{') ||
+                        (ch == ']' && last != '[')) {
                     return false;
                 }
             }
         }
-
         return stack.isEmpty();
     }
 }
