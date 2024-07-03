@@ -4,7 +4,7 @@ public class TwoSum {
     class Solution {
         public int[] twoSum(int[] nums, int target) {
             Map<Integer, Integer> numMap = new HashMap<>();
-            int n = nums.length;
+            int n = nums.length;sdfgsdfgjhkll
 
             for (int i = 0; i < n; i++) {
                 numMap.put(nums[i], i);
