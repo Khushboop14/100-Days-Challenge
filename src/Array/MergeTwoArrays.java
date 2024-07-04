@@ -24,7 +24,7 @@ public class MergeTwoArrays {
         for(int i = 0 ; i < m ; i++){
             arr2[i] = sc.nextInt();
         }
-        int result = mergeArrays(arr1, arr2);
+        int[] result = mergeArrays(arr1, arr2);
 
         System.out.println("First array : " + Arrays.toString(arr1));
         System.out.println("Second array : " + Arrays.toString(arr2));
@@ -34,12 +34,11 @@ public class MergeTwoArrays {
                 for(int i =0; i < arr1.length; i++){
                     for(int j=0; j<arr2.length; j++){
                         if(arr1.length > arr1.length){
-                            arr1 = arr2[j] ;
+                            arr1 = new int[]{arr2[j]};
                             j++;
                         }
                     }
                 }
-
 
 
         return new int[]{0};
