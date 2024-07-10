@@ -49,6 +49,7 @@ console.log(schoolName);
  Data type in JS: 
  1. Primitive data type: number, string, boolean, undefined, null (it is type of object), bigInt, symbol
  2. Non-Primitive data type: objects(collections of values, key : value ): Arrays, functions etc .
+ we can not update constant variable but we can change the keys of the constant objects. 
 */
 console.log(typeof fullName);
 const student ={
