@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 package LinkedList.SingleList;
+=======
+package src.LinkedList.SingleList;
+>>>>>>> ffea507eef11944b24dcf1ba48314fd91841be3f
 import java.util.Arrays;
 import java.util.List;
 

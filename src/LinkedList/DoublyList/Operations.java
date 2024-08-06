@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 package LinkedList.DoublyList;
 import java.lang.*;
 
 
+=======
+package src.LinkedList.DoublyList;
+>>>>>>> ffea507eef11944b24dcf1ba48314fd91841be3f
 // Java program to implement all functions
 // used in Doubly Linked List
 
@@ -76,7 +80,11 @@ class Main{
             ptr = ptr.next;
         }
         System.out.println();
+<<<<<<< HEAD
     }
+=======
+    }git
+>>>>>>> ffea507eef11944b24dcf1ba48314fd91841be3f
 
     // Function to insert a node at the
     // beginning of the linked list
